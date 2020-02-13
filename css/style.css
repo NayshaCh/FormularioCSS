@@ -18,10 +18,10 @@ a{
 }
 
 a:visited{
-    color: purple;
+    color: gray;
 }
 a:hover{
-    color: gray;
+    color: purple;
 }
 .container {
     display: flex;
@@ -33,18 +33,23 @@ a:hover{
 .login-box{
     background-color: white;
     width: 40%;
+    max-width: 400px;
     height: 500px;
     margin: auto;
-    box-shadow: 10px 20px 20px 5px #4f4487;
+    box-shadow: 10px 20px 20px 5px rgba(0,0,0,0.2);
 }
 .title-box {
     background: #4f4487;
     height: 100px;
     position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 .title-box > h2{
     color: white;
     font-size: 30px;
+    
 }
 .title-box > button {
     width: 50px;
@@ -57,11 +62,14 @@ a:hover{
     position: absolute;
     margin: -25px 8px;
     color: white;
-    box-shadow: 5px 5px 15px 5px #4f4487;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
 }
 .body-box{
-    padding: 32px;
+    padding: 20px;
     height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .field {
     display: flex;
@@ -79,23 +87,28 @@ a:hover{
 .group-buttons {
     height: 100px;
     padding: 8px;
+    margin: 16px;
     display: flex;
     justify-content: space-around;
-    margin: 16px;
     align-items: center;
+    max-width: 200px;
 }
 .btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 18px;
-    
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #btn-facebook {
     background-color: #3c5899;
 }
 #btn-github {
     background-color: black;
+    font-size: 40px;
 }
 #btn-twitter {
     background-color: #55acee;
