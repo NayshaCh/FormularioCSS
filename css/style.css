@@ -6,7 +6,6 @@
 input{
     outline: none;
     border: none;
-    border-bottom: 1px solid gray;
 }
 button{
     outline: none;
@@ -73,15 +72,16 @@ a:hover{
 }
 .field {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     color: #b485d8;
+    border-bottom: 1px solid gray;
+    margin-top: 16px;
 }
 .field > input {
     width: 80%;
     height: 40px;
     font-weight: 100;
     font-size: 20px;
-    margin-top: 16px;
     padding-left: 10px;
 }
 .group-buttons {
